@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>中国的茶文化</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+  <!-- <div id="introduction">
+    众所周知，中国不仅是一个茶文化浓郁深厚的国家，还是一个产茶大国。中国产的茶，不仅产量大，而且品种也非常的多，不同的茶有不同制作工艺，也正是因为不同的工艺才让茶产生如此之大的区别。那么茶都有哪些种类？一般我们在区分茶时，按照发酵程度来分有六种。下面一起来看看吧！
+  </div> -->
+  <div id="cards_container">
+        <div onclick="handleFlip1()" id="container1" class="container">
+           <div id="face" class="face">
+            绿茶
+           </div>
+           <div id="back" class="back">
+            绿茶是一种我们都比较熟悉的茶，它是没有经过任何发酵的茶，所以它的茶汤一般为绿色或者淡黄色，茶香偏自然，比较清新，喝起来有种如沐春风般的感觉。比较具有代表性的有碧螺春、龙井茶、信阳毛尖等。
+           </div>
+        </div>
+        <div onclick="handleFlip2()" id="container2" class="container">
+            <div id="face" class="face">
+            白茶
+            </div>
+            <div id="back" class="back">
+              白茶与黄茶差不多，同属于一种轻度发酵的茶，它的口感同样清爽清甜。不知为何人们对它有许多误解，但这并不影响它的作用与功效，它具有很强大的清热解毒，消菌杀毒的作用。代表名茶有：银针和白牡丹。
+            </div>
+         </div>
+         <div onclick="handleFlip3()" id="container3" class="container">
+            <div id="face" class="face">
+              黄茶
+            </div>
+            <div id="back" class="back">
+              这是一种只经过轻微发酵的茶，它产生的很早，于唐代宗时期便有关于它的记载。黄茶的茶汤呈现为金黄色，但它的口感是比较鲜，比较淡的，符合一种悠然自在的情怀。代表黄茶有君山银针、霍山黄芽等。
+            </div>
+         </div>
+         <div onclick="handleFlip4()" id="container4" class="container">
+            <div id="face" class="face">
+              红茶
+            </div>
+            <div id="back" class="back">
+              这类茶的发酵程度比较高，所以又称之全发酵茶，红茶的香味非常独特，茶汤为红色，口感甘甜醇厚，它也是因此而闻名，如作为中国十大名茶中的祁门红茶便是如此。代表名茶有祁门红茶与荔枝红茶。
+            </div>
+         </div>
+         <div onclick="handleFlip5()" id="container5" class="container">
+            <div id="face" class="face">
+              青茶
+            </div>
+            <div id="back" class="back">
+              这种茶是一种半发酵茶，外形呈靑褐色，冲泡后的茶汤也大都为褐色，具有绿茶与红茶的优点，喝起来既清新又甜醇。较为出名的有：铁观音、大红袍、冻顶乌龙等。
+            </div>
+         </div>
+         <div onclick="handleFlip6()" id="container6" class="container">
+            <div id="face" class="face">
+              黑茶
+            </div>
+            <div id="back" class="back">
+              黑茶是一种百分百发酵的茶，它总给人一种厚重典雅的感觉，那是因为它不仅制作工艺特别，还沉淀着厚重的发展历史。其代表茶有普洱茶、湖南黑茶等。
+            </div>
+         </div>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="./culture.html">茶道文化</a></li>
+      <li><a href="./person.html">历史名人</a></li>
+      <li><a href="./index.html">茶的品种</a></li>
+      <li><a href="./newage.html">茶艺</a></li>
+      <div class="nav-box"></div>
+    </ul>
+  </div>
+  <script>
+    function handleFlip1() {
+    let container = document.getElementById('container1')
+    container.style.transform = 'rotateY(180deg)'
+  }
+  function handleFlip2() {
+    let container = document.getElementById('container2')
+    container.style.transform = 'rotateY(180deg)'
+  }
+  function handleFlip3() {
+    let container = document.getElementById('container3')
+    container.style.transform = 'rotateY(180deg)'
+  }
+  function handleFlip4() {
+    let container = document.getElementById('container4')
+    container.style.transform = 'rotateY(180deg)'
+  }
+  function handleFlip5() {
+    let container = document.getElementById('container5')
+    container.style.transform = 'rotateY(180deg)'
+  }
+  function handleFlip6() {
+    let container = document.getElementById('container6')
+    container.style.transform = 'rotateY(180deg)'
+  }
+  </script>
+</body>
+</html>
